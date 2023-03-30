@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../bin/libsrcsax.a CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.o CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.o CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.o CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../bin/libsrcsax.a
