@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java" filename="Example5.java"><import>import <name><name>javax</name><operator>.</operator><name>swing</name><operator>.</operator><name>*</name></name>;</import>
+<import>import <name><name>java</name><operator>.</operator><name>awt</name><operator>.</operator><name>event</name><operator>.</operator><name>*</name></name>;</import>
+
+<class><specifier>public</specifier> class <name>MyFrame</name> <super_list><extends>extends <super><name>JFrame</name></super></extends></super_list> <block>{
+    <decl_stmt><decl><type><specifier>private</specifier> <name>JButton</name></type> <name>btn</name></decl>;</decl_stmt>
+    <decl_stmt><decl><type><specifier>private</specifier> <name>JTextField</name></type> <name>tf</name></decl>;</decl_stmt>
+
+    <constructor><specifier>public</specifier> <name>MyFrame</name><parameter_list>()</parameter_list> <block>{<block_content>
+        <expr_stmt><expr><call><name>super</name><argument_list>(<argument><expr><literal type="string">"MyFrame"</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <expr_stmt><expr><name>btn</name> <operator>=</operator> <operator>new</operator> <call><name>JButton</name><argument_list>(<argument><expr><literal type="string">"Click me"</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <expr_stmt><expr><name>tf</name> <operator>=</operator> <operator>new</operator> <call><name>JTextField</name><argument_list>(<argument><expr><literal type="number">20</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <expr_stmt><expr><call><name><name>btn</name><operator>.</operator><name>addActionListener</name></name><argument_list>(<argument><expr><name>this</name><operator>::</operator><name>btnClicked</name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <expr_stmt><expr><call><name>add</name><argument_list>(<argument><expr><name>btn</name></expr></argument>, <argument><expr><name><name>BorderLayout</name><operator>.</operator><name>NORTH</name></name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <expr_stmt><expr><call><name>add</name><argument_list>(<argument><expr><name>tf</name></expr></argument>, <argument><expr><name><name>BorderLayout</name><operator>.</operator><name>CENTER</name></name></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <expr_stmt><expr><call><name>pack</name><argument_list>()</argument_list></call></expr>;</expr_stmt>
+        <expr_stmt><expr><call><name>setVisible</name><argument_list>(<argument><expr><literal type="boolean">true</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+    </block_content>}</block></constructor>
+
+    <function><type><specifier>private</specifier> <name>void</name></type> <name>btnClicked</name><parameter_list>(<parameter><decl><type><name>ActionEvent</name></type> <name>e</name></decl></parameter>)</parameter_list> <block>{<block_content>
+        <expr_stmt><expr><call><name><name>tf</name><operator>.</operator><name>setText</name></name><argument_list>(<argument><expr><literal type="string">"Button clicked"</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+    </block_content>}</block></function>
+
+    <function><type><specifier>public</specifier> <specifier>static</specifier> <name>void</name></type> <name>main</name><parameter_list>(<parameter><decl><type><name><name>String</name><index>[]</index></name></type> <name>args</name></decl></parameter>)</parameter_list> <block>{<block_content>
+        <expr_stmt><expr><operator>new</operator> <call><name>MyFrame</name><argument_list>()</argument_list></call></expr>;</expr_stmt>
+    </block_content>}</block></function>
+}</block></class>
+</unit>
