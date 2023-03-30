@@ -1,54 +1,46 @@
 import os
 import xml.etree.ElementTree as ET
 import subprocess
+import requests
+import json
 
-# Function to check if a class implements ActionListener interface
 def implements_action_listener(class_element):
-    # Look for 'implements' tag
     implements_tag = class_element.find('./src:super_list/src:implements', namespaces=ns)
     if implements_tag is not None:
-        # Look for ActionListener interface
         for name_tag in implements_tag.findall('.//src:name', namespaces=ns):
             if name_tag.text == 'ActionListener':
                 return True
     return False
 
-# Define namespace for srcML
 ns = {'src': 'http://www.srcML.org/srcML/src'}
 
-# Set the path to your code2vec repository
 code2vec_path = "../code2vec"
 
-# Print the current working directory
-print("Current working directory:", os.getcwd())
+def get_pos_tags(identifier_type, identifier_name, prepositions):
+    url = f"http://localhost:5001/{identifier_type}/{identifier_name}/FUNCTION"
+    response = requests.get(url)
+    pos_tags = json.loads(response.text)
+    return {word: tag for word, tag in pos_tags.items() if tag in prepositions}
 
-# Loop through all XML files in directory
 for filename in os.listdir('.'):
     if filename.endswith('.xml'):
-        # Parse XML file
         tree = ET.parse(filename)
         root = tree.getroot()
 
-        # Look for 'class' tags
         for class_element in root.findall('./src:class', namespaces=ns):
-            # Check if class implements ActionListener
             if implements_action_listener(class_element):
                 print(f"{filename} contains event-driven code!")
-                
-                # Save the detected code to a temporary file
+
                 with open("temp.java", "w") as f:
                     f.write(ET.tostring(class_element, encoding="unicode"))
 
-                # Print the content of temp.java
                 with open("temp.java", "r") as f:
                     print("Content of temp.java:")
                     print(f.read())
 
-                # Write the temporary file name to a separate stdin file
                 with open("stdin.txt", "w") as f:
                     f.write("temp.java\n")
 
-                # Run code2vec using the separate stdin file
                 with subprocess.Popen(
                     ["python", f"{code2vec_path}/interactive_predict.py", f"{code2vec_path}/models/java14_model/saved_model_iter8.release"],
                     stdin=open("stdin.txt", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
@@ -60,9 +52,22 @@ for filename in os.listdir('.'):
                         print("code2vec response:")
                         print(result)
 
-                # Remove the temporary files
+                        identifier_names = result.strip().split("\n")[1:]
+
+                        prepositions = ["of", "in", "on"]
+                        potential_names = []
+                        for identifier_name in identifier_names:
+                            pos_tags = get_pos_tags("int", identifier_name, prepositions)
+                            if pos_tags:
+                                potential_names.append(identifier_name)
+
+                        print("Potential names containing prepositions:")
+                        print(potential_names)
+
                 os.remove("temp.java")
                 os.remove("stdin.txt")
 
                 break
 
+            else:
+                print(f"{filename} does not contain event-driven code!")
