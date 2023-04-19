@@ -1,4 +1,4 @@
-# Install script for directory: /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/src
+# Install script for directory: /Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

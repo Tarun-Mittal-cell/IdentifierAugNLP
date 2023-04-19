@@ -1,4 +1,4 @@
-# Install script for directory: /Users/tarunmittal/Desktop/ensemble_tagger
+# Install script for directory: /Users/tarunmittal/Desktop/NLP Project/ensemble_tagger
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/cmake_install.cmake")
-  include("/Users/tarunmittal/Desktop/ensemble_tagger/build/src/cmake_install.cmake")
+  include("/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/cmake_install.cmake")
+  include("/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/src/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/tarunmittal/Desktop/ensemble_tagger/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

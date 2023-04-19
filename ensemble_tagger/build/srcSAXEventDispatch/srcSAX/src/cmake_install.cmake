@@ -1,4 +1,4 @@
-# Install script for directory: /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src
+# Install script for directory: /Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/tarunmittal/Desktop/ensemble_tagger/build/bin/libsrcsax.dylib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/bin/libsrcsax.dylib")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrcsax.dylib" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrcsax.dylib")
     execute_process(COMMAND "/usr/bin/install_name_tool"
@@ -54,7 +54,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/tarunmittal/Desktop/ensemble_tagger/build/bin/libsrcsax.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/bin/libsrcsax.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrcsax.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrcsax.a")
     execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrcsax.a")
@@ -63,13 +63,13 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/srcsax" TYPE FILE FILES
-    "/Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/cppCallbackAdapter.hpp"
-    "/Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/srcSAXController.hpp"
-    "/Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/srcSAXHandler.hpp"
-    "/Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/sax2_srcsax_handler.hpp"
-    "/Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcml_element.hpp"
-    "/Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcsax.h"
-    "/Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcsax_handler.h"
+    "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/cppCallbackAdapter.hpp"
+    "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/srcSAXController.hpp"
+    "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/srcSAXHandler.hpp"
+    "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/sax2_srcsax_handler.hpp"
+    "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcml_element.hpp"
+    "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcsax.h"
+    "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcsax_handler.h"
     )
 endif()
 

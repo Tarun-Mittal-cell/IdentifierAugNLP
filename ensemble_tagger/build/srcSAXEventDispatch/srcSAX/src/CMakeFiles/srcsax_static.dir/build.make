@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.26.1/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.26.3/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.26.1/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.26.3/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tarunmittal/Desktop/ensemble_tagger
+CMAKE_SOURCE_DIR = "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tarunmittal/Desktop/ensemble_tagger/build
+CMAKE_BINARY_DIR = "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build"
 
 # Include any dependencies generated for this target.
 include srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/depend.make
@@ -70,60 +70,60 @@ include srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/progress.mak
 include srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/flags.make
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.o: srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/flags.make
-srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.o: /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/srcSAXController.cpp
+srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.o: /Users/tarunmittal/Desktop/NLP\ Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/srcSAXController.cpp
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.o: srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tarunmittal/Desktop/ensemble_tagger/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.o"
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.o -MF CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.o.d -o CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.o -c /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/srcSAXController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.o"
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.o -MF CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.o.d -o CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.o -c "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/srcSAXController.cpp"
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.i"
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/srcSAXController.cpp > CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.i
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/srcSAXController.cpp" > CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.i
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.s"
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/srcSAXController.cpp -o CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.s
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/cpp/srcSAXController.cpp" -o CMakeFiles/srcsax_static.dir/cpp/srcSAXController.cpp.s
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.o: srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/flags.make
-srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.o: /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/sax2_srcsax_handler.cpp
+srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.o: /Users/tarunmittal/Desktop/NLP\ Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/sax2_srcsax_handler.cpp
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.o: srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tarunmittal/Desktop/ensemble_tagger/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.o"
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.o -MF CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.o.d -o CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.o -c /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/sax2_srcsax_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.o"
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.o -MF CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.o.d -o CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.o -c "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/sax2_srcsax_handler.cpp"
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.i"
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/sax2_srcsax_handler.cpp > CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.i
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/sax2_srcsax_handler.cpp" > CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.i
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.s"
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/sax2_srcsax_handler.cpp -o CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.s
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/sax2_srcsax_handler.cpp" -o CMakeFiles/srcsax_static.dir/srcsax/sax2_srcsax_handler.cpp.s
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.o: srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/flags.make
-srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.o: /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcsax_controller.cpp
+srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.o: /Users/tarunmittal/Desktop/NLP\ Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcsax_controller.cpp
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.o: srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tarunmittal/Desktop/ensemble_tagger/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.o"
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.o -MF CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.o.d -o CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.o -c /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcsax_controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.o"
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.o -MF CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.o.d -o CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.o -c "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcsax_controller.cpp"
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.i"
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcsax_controller.cpp > CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.i
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcsax_controller.cpp" > CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.i
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.s"
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcsax_controller.cpp -o CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.s
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/srcsax/srcsax_controller.cpp" -o CMakeFiles/srcsax_static.dir/srcsax/srcsax_controller.cpp.s
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o: srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/flags.make
-srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o: /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/windows/windows_utils.cpp
+srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o: /Users/tarunmittal/Desktop/NLP\ Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/windows/windows_utils.cpp
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o: srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tarunmittal/Desktop/ensemble_tagger/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o"
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o -MF CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o.d -o CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o -c /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/windows/windows_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o"
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o -MF CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o.d -o CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o -c "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/windows/windows_utils.cpp"
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.i"
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/windows/windows_utils.cpp > CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.i
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/windows/windows_utils.cpp" > CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.i
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.s"
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/windows/windows_utils.cpp -o CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.s
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src/windows/windows_utils.cpp" -o CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.s
 
 # Object files for target srcsax_static
 srcsax_static_OBJECTS = \
@@ -141,19 +141,19 @@ bin/libsrcsax.a: srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/src
 bin/libsrcsax.a: srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/windows/windows_utils.cpp.o
 bin/libsrcsax.a: srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/build.make
 bin/libsrcsax.a: srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tarunmittal/Desktop/ensemble_tagger/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../../bin/libsrcsax.a"
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && $(CMAKE_COMMAND) -P CMakeFiles/srcsax_static.dir/cmake_clean_target.cmake
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/srcsax_static.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../../bin/libsrcsax.a"
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && $(CMAKE_COMMAND) -P CMakeFiles/srcsax_static.dir/cmake_clean_target.cmake
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/srcsax_static.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/build: bin/libsrcsax.a
 .PHONY : srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/build
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/clean:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src && $(CMAKE_COMMAND) -P CMakeFiles/srcsax_static.dir/cmake_clean.cmake
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" && $(CMAKE_COMMAND) -P CMakeFiles/srcsax_static.dir/cmake_clean.cmake
 .PHONY : srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/clean
 
 srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/depend:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/tarunmittal/Desktop/ensemble_tagger /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/srcSAX/src /Users/tarunmittal/Desktop/ensemble_tagger/build /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger" "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/srcSAX/src" "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src" "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : srcSAXEventDispatch/srcSAX/src/CMakeFiles/srcsax_static.dir/depend
 

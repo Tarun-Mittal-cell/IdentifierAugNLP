@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.26.1/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.26.3/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.26.1/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.26.3/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tarunmittal/Desktop/ensemble_tagger
+CMAKE_SOURCE_DIR = "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tarunmittal/Desktop/ensemble_tagger/build
+CMAKE_BINARY_DIR = "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/tarunmittal/Desktop/ensemble_tagger/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.26.1/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.26.3/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.26.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.26.3/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,49 +97,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/Cellar/cmake/3.26.1/bin/cmake -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.26.3/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/Cellar/cmake/3.26.1/bin/cmake -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.26.3/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.26.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.26.3/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.26.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.26.3/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/3.26.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.26.3/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/3.26.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.26.3/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/tarunmittal/Desktop/ensemble_tagger/build/CMakeFiles /Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/src//CMakeFiles/progress.marks
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srcSAXEventDispatch/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tarunmittal/Desktop/ensemble_tagger/build/CMakeFiles 0
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/CMakeFiles" "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/src//CMakeFiles/progress.marks"
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srcSAXEventDispatch/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srcSAXEventDispatch/src/clean
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srcSAXEventDispatch/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srcSAXEventDispatch/src/preinstall
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srcSAXEventDispatch/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srcSAXEventDispatch/src/preinstall
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srcSAXEventDispatch/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/rule:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/rule
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/rule
 .PHONY : srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ srcsaxeventdispatch: srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/
 
 # fast build rule for target.
 srcsaxeventdispatch/fast:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build
 .PHONY : srcsaxeventdispatch/fast
 
 dispatcher/srcSAXEventDispatcher.o: dispatcher/srcSAXEventDispatcher.cpp.o
@@ -180,7 +180,7 @@ dispatcher/srcSAXEventDispatcher.o: dispatcher/srcSAXEventDispatcher.cpp.o
 
 # target to build an object file
 dispatcher/srcSAXEventDispatcher.cpp.o:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/dispatcher/srcSAXEventDispatcher.cpp.o
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/dispatcher/srcSAXEventDispatcher.cpp.o
 .PHONY : dispatcher/srcSAXEventDispatcher.cpp.o
 
 dispatcher/srcSAXEventDispatcher.i: dispatcher/srcSAXEventDispatcher.cpp.i
@@ -188,7 +188,7 @@ dispatcher/srcSAXEventDispatcher.i: dispatcher/srcSAXEventDispatcher.cpp.i
 
 # target to preprocess a source file
 dispatcher/srcSAXEventDispatcher.cpp.i:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/dispatcher/srcSAXEventDispatcher.cpp.i
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/dispatcher/srcSAXEventDispatcher.cpp.i
 .PHONY : dispatcher/srcSAXEventDispatcher.cpp.i
 
 dispatcher/srcSAXEventDispatcher.s: dispatcher/srcSAXEventDispatcher.cpp.s
@@ -196,7 +196,7 @@ dispatcher/srcSAXEventDispatcher.s: dispatcher/srcSAXEventDispatcher.cpp.s
 
 # target to generate assembly for a file
 dispatcher/srcSAXEventDispatcher.cpp.s:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/dispatcher/srcSAXEventDispatcher.cpp.s
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/dispatcher/srcSAXEventDispatcher.cpp.s
 .PHONY : dispatcher/srcSAXEventDispatcher.cpp.s
 
 policy_classes/TemplateArgumentPolicySingleEvent.o: policy_classes/TemplateArgumentPolicySingleEvent.cpp.o
@@ -204,7 +204,7 @@ policy_classes/TemplateArgumentPolicySingleEvent.o: policy_classes/TemplateArgum
 
 # target to build an object file
 policy_classes/TemplateArgumentPolicySingleEvent.cpp.o:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/policy_classes/TemplateArgumentPolicySingleEvent.cpp.o
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/policy_classes/TemplateArgumentPolicySingleEvent.cpp.o
 .PHONY : policy_classes/TemplateArgumentPolicySingleEvent.cpp.o
 
 policy_classes/TemplateArgumentPolicySingleEvent.i: policy_classes/TemplateArgumentPolicySingleEvent.cpp.i
@@ -212,7 +212,7 @@ policy_classes/TemplateArgumentPolicySingleEvent.i: policy_classes/TemplateArgum
 
 # target to preprocess a source file
 policy_classes/TemplateArgumentPolicySingleEvent.cpp.i:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/policy_classes/TemplateArgumentPolicySingleEvent.cpp.i
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/policy_classes/TemplateArgumentPolicySingleEvent.cpp.i
 .PHONY : policy_classes/TemplateArgumentPolicySingleEvent.cpp.i
 
 policy_classes/TemplateArgumentPolicySingleEvent.s: policy_classes/TemplateArgumentPolicySingleEvent.cpp.s
@@ -220,7 +220,7 @@ policy_classes/TemplateArgumentPolicySingleEvent.s: policy_classes/TemplateArgum
 
 # target to generate assembly for a file
 policy_classes/TemplateArgumentPolicySingleEvent.cpp.s:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/policy_classes/TemplateArgumentPolicySingleEvent.cpp.s
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/policy_classes/TemplateArgumentPolicySingleEvent.cpp.s
 .PHONY : policy_classes/TemplateArgumentPolicySingleEvent.cpp.s
 
 policy_classes/TypePolicySingleEvent.o: policy_classes/TypePolicySingleEvent.cpp.o
@@ -228,7 +228,7 @@ policy_classes/TypePolicySingleEvent.o: policy_classes/TypePolicySingleEvent.cpp
 
 # target to build an object file
 policy_classes/TypePolicySingleEvent.cpp.o:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/policy_classes/TypePolicySingleEvent.cpp.o
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/policy_classes/TypePolicySingleEvent.cpp.o
 .PHONY : policy_classes/TypePolicySingleEvent.cpp.o
 
 policy_classes/TypePolicySingleEvent.i: policy_classes/TypePolicySingleEvent.cpp.i
@@ -236,7 +236,7 @@ policy_classes/TypePolicySingleEvent.i: policy_classes/TypePolicySingleEvent.cpp
 
 # target to preprocess a source file
 policy_classes/TypePolicySingleEvent.cpp.i:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/policy_classes/TypePolicySingleEvent.cpp.i
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/policy_classes/TypePolicySingleEvent.cpp.i
 .PHONY : policy_classes/TypePolicySingleEvent.cpp.i
 
 policy_classes/TypePolicySingleEvent.s: policy_classes/TypePolicySingleEvent.cpp.s
@@ -244,7 +244,7 @@ policy_classes/TypePolicySingleEvent.s: policy_classes/TypePolicySingleEvent.cpp
 
 # target to generate assembly for a file
 policy_classes/TypePolicySingleEvent.cpp.s:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/policy_classes/TypePolicySingleEvent.cpp.s
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(MAKE) $(MAKESILENT) -f srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/build.make srcSAXEventDispatch/src/CMakeFiles/srcsaxeventdispatch.dir/policy_classes/TypePolicySingleEvent.cpp.s
 .PHONY : policy_classes/TypePolicySingleEvent.cpp.s
 
 # Help Target
@@ -280,6 +280,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/tarunmittal/Desktop/ensemble_tagger/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

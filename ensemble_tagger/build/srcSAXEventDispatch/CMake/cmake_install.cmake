@@ -1,4 +1,4 @@
-# Install script for directory: /Users/tarunmittal/Desktop/ensemble_tagger/srcSAXEventDispatch/CMake
+# Install script for directory: /Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/srcSAXEventDispatch/CMake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/CMake/cmake_install.cmake")
-  include("/Users/tarunmittal/Desktop/ensemble_tagger/build/srcSAXEventDispatch/src/cmake_install.cmake")
+  include("/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/srcSAX/CMake/cmake_install.cmake")
+  include("/Users/tarunmittal/Desktop/NLP Project/ensemble_tagger/build/srcSAXEventDispatch/src/cmake_install.cmake")
 
 endif()
 
