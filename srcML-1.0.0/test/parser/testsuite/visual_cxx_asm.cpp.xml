@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" language="C++" url="visual_cxx_asm" filename="visual_cxx_asm">
+
+<unit xmlns:cpp="http://www.srcML.org/srcML/cpp" language="C++">
+<asm>__asm int 3</asm>
+</unit>
+
+<unit xmlns:cpp="http://www.srcML.org/srcML/cpp" language="C++">
+<asm>__asm int 3;</asm>
+</unit>
+
+<unit xmlns:cpp="http://www.srcML.org/srcML/cpp" language="C++">
+<asm>__asm int 3</asm> <asm>__asm int 3</asm>
+</unit>
+
+<unit xmlns:cpp="http://www.srcML.org/srcML/cpp" language="C++">
+<asm>__asm int 3;</asm> <asm>__asm int 3</asm>
+</unit>
+
+<unit xmlns:cpp="http://www.srcML.org/srcML/cpp" language="C++">
+<asm>__asm { <asm>int 3</asm> }</asm>
+</unit>
+
+<unit xmlns:cpp="http://www.srcML.org/srcML/cpp" language="C++">
+<asm>__asm {
+<asm>int 3</asm>
+}</asm>
+</unit>
+
+<unit xmlns:cpp="http://www.srcML.org/srcML/cpp" language="C++">
+<asm>__asm {
+<asm>int 3</asm>
+};</asm>
+</unit>
+
+<unit xmlns:cpp="http://www.srcML.org/srcML/cpp" language="C++">
+<asm>__asm {
+<asm>int 3</asm>
+<asm>int 3;</asm>
+<asm>__asm int 3</asm>
+<asm>__asm int 3;</asm>
+<asm>{
+<asm>int 3</asm>
+}</asm>
+<asm>{
+<asm>int 3</asm>
+};</asm>
+<asm>__asm {
+<asm>int 3</asm>
+}</asm>
+<asm>__asm {
+<asm>int 3</asm>
+};</asm>
+}</asm>
+</unit>
+
+<unit xmlns:cpp="http://www.srcML.org/srcML/cpp" language="C++">
+<asm>__asm { <asm>int 3;</asm> <asm>__asm int 3</asm> <asm>__asm int 3;</asm> }</asm>
+</unit>
+
+<unit xmlns:cpp="http://www.srcML.org/srcML/cpp" language="C++">
+<asm>__asm  {
+<asm>int 3;</asm> <asm>__asm int 3</asm> <asm>__asm int 3;</asm>
+}</asm>
+</unit>
+
+</unit>

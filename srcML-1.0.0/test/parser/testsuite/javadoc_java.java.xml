@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" language="Java" url="javadoc">
+
+<unit language="Java">
+<comment type="block" format="javadoc">/** */</comment>
+</unit>
+
+<unit language="Java">
+<comment type="block" format="javadoc">/**
+*/</comment>
+</unit>
+
+<unit language="Java">
+<comment type="block" format="javadoc">/**
+*
+*/</comment>
+</unit>
+
+<unit language="Java">
+<comment type="block" format="javadoc">/**
+
+*/</comment>
+</unit>
+
+</unit>
