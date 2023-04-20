@@ -16,6 +16,7 @@ public class Main {
             "V+"
     ));
 
+
     public static String getBestMatch(String input) {
         int minDistance = Integer.MAX_VALUE;
         String bestMatch = null;
@@ -30,6 +31,8 @@ public class Main {
 
         return bestMatch;
     }
+
+
 
     public static int getLevenshteinDistance(String s1, String s2) {
         int m = s1.length();
@@ -58,11 +61,17 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String input = "GetNormalEmployeeUsageData";
+        if (args.length == 0) {
+            System.out.println("Please provide an input string");
+            return;
+        }
+
+        String input = args[0];
 
         String bestMatch = getBestMatch(input);
         int distance = getLevenshteinDistance(input, bestMatch);
         System.out.println("Best match for input string '" + input + "' is: " + bestMatch + ", Levenshtein distance: " + distance);
     }
 }
+
 
