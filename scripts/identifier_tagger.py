@@ -1,7 +1,8 @@
 import sys
+import requests
 sys.path.append('/Users/tarunmittal/Desktop/NLP Project/code2vec')
+
 import code2vec
-from ensemble_tagger import EnsembleTagger
 
 # Replace this list with your actual code snippets
 code_snippets = [
@@ -13,9 +14,6 @@ code_snippets = [
 model_path = "/Users/tarunmittal/Desktop/NLP Project/code2vec/models/java14_model"
 model = code2vec.Code2Vec.load(model_path)
 
-# Load the ensemble tagger
-tagger = EnsembleTagger()
-
 # Process code snippets and predict identifier names
 predicted_identifiers = []
 
@@ -24,12 +22,22 @@ for snippet in code_snippets:
     if prediction:
         predicted_identifiers.append(prediction[0].name)
 
-# Feed the predicted identifier names to the ensemble tagger
+# Send the predicted identifier names to the ensemble tagger server
+ensemble_tagger_server_url = "http://127.0.0.1:5003"
 tagged_identifiers = []
 
 for identifier in predicted_identifiers:
-    pos_tags = tagger.tag(identifier)
-    tagged_identifiers.append((identifier, pos_tags))
+    # Update the identifier_type and code_context based on your specific use case
+    identifier_type = "int"
+    code_context = "DECLARATION"
+    request_url = f"{ensemble_tagger_server_url}/{identifier_type}/{identifier}/{code_context}"
+    response = requests.get(request_url)
+
+    if response.status_code == 200:
+        pos_tags = response.json()
+        tagged_identifiers.append((identifier, pos_tags))
+    else:
+        print(f"Error while processing identifier: {identifier}")
 
 # Print the tagged identifiers
 for identifier, pos_tags in tagged_identifiers:
