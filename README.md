@@ -106,10 +106,16 @@ java Main.java
 3. Refer to README or documentation files in each directory.
 
 
+
+
+## Credits
+
+Special thanks to Dr. Christian Newman for his invaluable guidance throughout this project. Without his expertise and mentorship, this project would not have been possible. 
+
+Additionally, immense gratitude is extended for allowing the use of the `ensemble_tagger`, which he authored. You can find more of his work on his GitHub account: [cnewman](https://github.com/cnewman).
+
 ## Feedback and Support
 For questions, feedback, or support, contact tm6622@rit.edu or raise an issue on the GitHub repository.
-
-
 
 
 
